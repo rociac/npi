@@ -1,0 +1,61 @@
+/*
+  Theme Name: NPI
+  Author: Rodolfo Cisneros
+  Version: 1.0
+*/
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  box-sizing: border-box;
+}
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.header__image-container {
+  width: 4.6rem;
+  height: 7.2rem;
+}
+
+.header__image-container img {
+ width: 100%;
+}
+
+.nav {
+  display: flex;
+  width: 60%;
+  align-items: center;
+  position: sticky;
+}
+
+.nav__list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.hero {
+  background-color: black;
+  height: 90vh;
+  color: white;
+}
+
