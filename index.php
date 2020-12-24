@@ -1,47 +1,40 @@
 <?php
-  get_header();
-?>
-
-<main>
-  <section class="hero">
-    <div class="hero__text">
-      <h1>NPI Molding Solutions</h1>
-      <p>es una empresa 100% mexicana que ofrece soluciones integrales para tau negocio de Moldeo por Inyección.</p>
-      <a href="#">Conoce más</a>
+  get_header(); ?>
+  <main class="bg-grey">
+    <div class="title-box__container">
+      <div class="blog__title-box">
+        <h1 class="title">Blog</h1>
+        <hr class="break break-dark mt-2 mb-2">
+        <p>Descubre el blog de la Industria del Plástico creado por profesionales con más de 30 años de experiencia.
+          Compartimos lo que sabemos de la A a la Z para ofrecerte recursos gratis y 100% funcionales que ayuden a mejorar tus procesos.</p>
+      </div>
     </div>
-  </section>
-
-  <section class="nosotros">
-    <div class="nosotros__izq">
-      <h2>Acerca de Nosotros</h2>
-      <p>En NPI Molding Solutions ofrecemos la fabricación de moldes, servicios de taller, automatizaciones, sistema de coladas calientes,
-         maquila de piezas, refaccionamiento para máquinas - moldes y cursos:
-          brindando soluciones integrales para tu empresa de Moldeo por Inyección.</p>
+    <div class="blog__container">
+    <?php
+      while(have_posts()) {
+        the_post(); 
+        $year = get_post_time('Y');
+        $month = get_post_time('m');
+        ?>
+        <div class="post__card">
+          <img class="post__thumbnail" src="<?php the_post_thumbnail_url(); ?>" alt="">
+          <div class="card__content">
+            <div class="card__meta-box">
+              <a class="meta-box__link" href="<?php echo get_month_link($year, $month)?>"><?php the_date('M Y')?></a>
+              &sdot;
+              <?php echo get_the_category_list() ?>
+            </div>
+            <!-- <p class="card__meta-box"><?php the_date('M Y')?> &sdot;<?php echo get_the_category_list(); ?></p> -->
+            <div class="card__content-top">
+              <hr class="content-break break-blue">
+              <h2 class="card__title"><?php the_title(); ?></h2>
+            </div>
+            <a href=""></a>
+            <?php  echo '<p class="content__text">' . get_the_excerpt() . '</p>' ?>
+            <a href="<?php the_permalink(); ?>" class="blog__button">Leer artículo</a>
+          </div>
+        </div>
+      <?php } ?>
     </div>
-    <div class="about-us__derecha">
-      <img src="" alt="">
-    </div>
-  </section>
-
-  <section class="blog">
-
-  </section>
-
-  <section class="cursos">
-    <h2>Conoce nuestros cursos</h2>
-    <p>Con nuestros cursos aprenderás de elementos de control para la administración y calidad operativa a través de indicadores en el proceso de inyección, dirigidos a mantener en forma documental y eficiente los pasos productivos, eficiencia, control de calidad de producto y proceso, desperdicios, seguridad, orden y limpieza.
-
-Además podrás obtener la Certificación IMS donde adquirirás un conocimiento integral en las áreas de proceso de inyección, diseño de moldes, calidad y administración operativa con el objetivo de desarrollar individuos multidisciplinarios en las empresas partiendo de un enfoque técnico con una meta en una visión directiva.
-
-Impulsa tu carrera profesional cursando nuestros programas académicos, impartidos por profesionales del plástico que te ayudarán a poner el práctica la teoría.</p>
-    <a href="#">Ir a los cursos</a>
-  </section>
-
-  <section class="clientes">
-
-  </section>
-</main>
-
-<?php
-  get_footer();
-?>
+  </main>
+  <?php get_footer(); ?>

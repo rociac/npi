@@ -1,0 +1,233 @@
+@media only screen and (max-width: 86.8em) {
+  
+  
+  .blog__section-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 68.7em) {
+  .clientes {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .clientes__text-container {
+    width: 50%;
+    left: unset;
+  }
+  
+  .clientes .title {
+    text-align: center;
+  }
+
+  .slider__container {
+    padding-top: 35rem;
+  }
+}
+
+@media only screen and (max-width: 50em) {
+  .nav {
+    margin: 0 3rem;
+  }
+
+  .header {
+    width: 100%;
+  }
+
+  .hero__text {
+    width: 80%;
+    left: unset;
+  }
+
+  .hero__title {
+    font-size: 3rem
+  }
+
+  .hero__copy {
+    font-size: 2rem;
+    line-height: 4rem;
+  }
+
+  .title-box__container {
+    width: 100%;
+    margin-top: 13rem;
+  }
+
+  .nosotros {
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .nosotros__izq {
+    width: 80%;
+    height: auto;
+    padding: 0;
+    margin-top: 5rem;
+    margin-left: 0;
+    margin-bottom: 10rem;
+  }
+
+  .nosotros__derecha {
+    width: 100%;
+    background: none;
+  }
+
+  .nosotros__derecha img{
+    display: block;
+    width: 100%;
+  }
+
+  .nosotros__izq .title {
+    text-align: center;
+  }
+
+  .nosotros__link {
+    display: none;
+  }
+
+  .nosotros__imagen {
+    width: 100%;
+  }
+
+  .blog__title-box {
+    width: 80%;
+    height: auto;
+    margin: auto;
+
+  }
+
+  .title-box__container .title {
+    text-align: center;
+  }
+
+  .blog {
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+
+  .blog__header {
+    width: 80%;
+    left: unset;
+  }
+
+  .blog__header .title {
+    text-align: center;
+  }
+
+  .blog__container {
+    margin: 5rem auto;
+    padding-left: 1.8rem;
+  }
+
+  .blog__section-container {
+    margin-left: 5rem;
+  }
+
+  .post__container {
+    width: 100%;
+    margin-top: 10rem;
+  }
+
+  .post__image {
+    width: 100%;
+  }
+  
+  .post__title {
+    font-size: 7rem;
+    line-height: 7rem;
+    margin-top: 3rem;
+  }
+
+  .post__text {
+    width: 80%;
+  }
+
+  .cursos {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cursos__left {
+    left: unset;
+    width: 80%;
+    top: 5rem;
+  }
+
+  .cursos__left .title {
+    width: 100%;
+    font-size: 6rem;
+    text-align: center;
+  }
+
+  .clientes__text-container {
+    width: 80%;
+  }
+
+  .clientes__text-container .title{
+    width: 100%;
+    font-size: 6rem;
+    line-height: 6rem;
+  }
+
+  .contact__container {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12rem;
+  }
+
+  .text__container {
+    margin: 0;
+  }
+
+  .form__container {
+    margin: 0;
+  }
+
+  .contact__aside {
+    display: none;
+  }
+
+  .footer {
+    height: auto;
+  }
+
+  .footer__nav {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .footer__nav .nav__list {
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+
+  .footer__nav .nav__list li {
+    margin-left: 0;
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    margin: 4.5rem auto;
+  }
+
+  .footer__social {
+    margin-right: 0;
+    margin-top: 3rem;
+  }
+
+  .slider__container {
+    display: none;
+  }
+
+}
