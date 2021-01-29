@@ -3,6 +3,14 @@
 <head>
   <meta charset="<?php bloginfo('charset'); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-459925964"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);} 
+    gtag('js', new Date());
+    gtag('config', 'AW-459925964');
+  </script>
   <?php wp_head(); ?>
   <!-- Facebook Pixel Code -->
   <script>
@@ -23,15 +31,6 @@
   &noscript=1"/>
   </noscript>
   <!-- End Facebook Pixel Code -->
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-185505940-1">
-  </script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-185505940-1');
-  </script>
 </head>
 <body <?php body_class(); ?>>
   <header class="header">
@@ -39,13 +38,16 @@
       <div class="image-container">
         <a href="<?php echo site_url(); ?>"><img src="<?php echo get_theme_file_uri('img/logo.png')?>" alt="NPI Logo"></a>
       </div>
+      <i class="fas fa-bars nav__icon"></i>
       <ul class="nav__list">
-        <li><a class="header__list header__hover" href="<?php echo site_url('/blog')?>">Blog</a></li>
-        <li class="hidden"><a class="header__hover" href="#">Nosotros</a></li>
-        <li class="hidden"><a class="header__hover" href="#">Multimedia</a></li>
-        <li class="hidden"><a class="header__hover" href="#">Cursos</a></li>
-        <li class="hidden"><a class="header__hover" href="#">Recursos</a></li>
-        <li><a class="nav__button" href="<?php echo site_url('/contacto')?>">Contáctanos</a></li>
+        <li><a class="header__list header__hover link-aniversario" href="<?php echo site_url('/aniversario'); ?>">Aniversario</a></li>
+        <li><a class="header__list header__hover" href="<?php echo site_url(''); ?>">Inicio</a></li>
+        <li><a class="header__list header__hover" href="<?php echo site_url('/blog'); ?>">Blog</a></li>
+        <li><a class="header__list header__hover" href="<?php echo site_url('/nosotros'); ?>">Nosotros</a></li>
+        <li><a class="header__list header__hover" href="<?php echo site_url('/cursos'); ?>">Cursos</a></li>
+        <li><a class="header__list header__hover" href="<?php echo site_url('/servicios'); ?>">Servicios</a></li>
+        <li><a class="header__list header__hover" href="<?php echo site_url('/newsletter'); ?>">Newsletter</a></li>
+        <li><a class="btn btn-primary btn-big center small" href="<?php echo site_url('/contacto'); ?>">Contacto <i class="button-icon far fa-envelope"></i></a></li>
       </ul>
     </nav>
   </header>

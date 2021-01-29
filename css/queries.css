@@ -10,6 +10,15 @@
   }
 }
 
+@media (min-width: 1250px) {
+  .input::before {
+    left: -10rem;
+  }
+  .input::after {
+    right: -10rem;
+  }
+}
+
 @media only screen and (max-width: 68.7em) {
   .clientes {
     justify-content: center;
@@ -33,6 +42,41 @@
 @media only screen and (max-width: 50em) {
   .nav {
     margin: 0 3rem;
+    width: 100%;
+  }
+
+  .nav__list {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav__list li {
+    margin: 0;
+  }
+
+  .footer-nav__list {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .footer-nav__list li {
+    margin: 0;
+    margin-top: 2rem;
+  }
+
+  .nav__list.show {
+    display: flex;
+    height: 60%;
+  }
+
+  .nav__icon {
+    display: block !important;
   }
 
   .header {
@@ -55,7 +99,8 @@
 
   .title-box__container {
     width: 100%;
-    margin-top: 13rem;
+    margin-top: 6rem;
+    height: 40rem;
   }
 
   .nosotros {
@@ -105,6 +150,7 @@
 
   .title-box__container .title {
     text-align: center;
+    font-size: 7.8rem;
   }
 
   .blog {
@@ -123,12 +169,13 @@
   }
 
   .blog__container {
-    margin: 5rem auto;
+    margin: 0 auto;
     padding-left: 1.8rem;
   }
 
   .blog__section-container {
     margin-left: 5rem;
+    padding-top: 35rem;
   }
 
   .post__container {
@@ -228,6 +275,235 @@
 
   .slider__container {
     display: none;
+  }
+
+  .title-box {
+    width: 100%;
+  }
+
+  .title-box h1 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .title-box hr {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+  
+  .title-box p {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .info__banner {
+    flex-direction: column-reverse;
+  }
+
+  .info__banner-copy {
+    width: 100%;
+    padding: 0;
+    margin: 2rem 0;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .info__banner-copy h2 {
+    text-align: center;
+  }
+
+  .servicios-dynamic-image__container {
+    display: none;
+  }
+
+  .cursos-dynamic-image__container {
+    display: none;
+  }
+
+  .servicios__list {
+    width: 100%;
+  }
+
+  .servicios-list-title {
+    width: 100%;
+  }
+
+  .servicios__list li {
+    height: 5.59rem;
+  }
+
+  .info__banner-image__container > .servicio__image {
+    width: 100%;
+    height: 100%;
+  }
+
+  .cursos__container {
+    padding-left: 0;
+  }
+
+  .newsletter__title {
+    font-size: 3rem;
+    width: 100%;
+  }
+
+  .newsletter__subtitle {
+    width: 100%;
+    text-align: justify;
+    padding: 1rem
+  }
+
+  .newsletter__list {
+    width: 100%;
+    font-size: 1.1rem;
+  }
+
+  .newsletter__body {
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .newsletter__form {
+    width: 90%;
+  }
+
+  .clientes {
+    display: none !important;
+  }
+
+  .xl {
+    height: 60rem !important;
+  }
+
+  .info__banner-image__container {
+    width: 100%;
+  }
+
+  .flex-parent {
+  }
+
+  .input-flex-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+  }
+
+  .input {
+    width: 6rem;
+    height: 6rem;
+    margin: 0 10px 50px;
+    background-color: ;
+  }
+
+  .input::before,
+  .input::after {
+    content: none;
+  }
+
+  .wallpapers {
+    height: auto;
+  }
+
+  .wallpapers__bottom {
+    flex-direction: column;
+  }
+
+  .content__copy {
+    padding: 2rem;
+    font-size: 1.4rem;
+  }
+
+  .glass {
+    height: 38rem;
+  }
+
+  .content__container {
+    flex-direction: column;
+  }
+
+  .content__container-left {
+    width: 100%;
+  }
+
+  .content__container-right {
+    width: 100%;
+  }
+
+  .flex-parent {
+    margin-top: 3rem;
+  }
+
+  .input-flex-container {
+    justify-content: initial;
+    align-items: center;
+    padding-left: 5rem;
+  }
+
+  .input {
+    margin: 0 !important;
+    margin-right: 3rem !important;
+    margin-bottom: 3rem !important;
+  }
+
+  .timeline__top {
+    height: 40rem;
+    margin-top: 3rem;
+  }
+
+  .title-box-small {
+    width: 100%;
+    height: auto;
+    margin-top: 3rem;
+  }
+
+  
+  .title-box-small p{
+    padding: 0 5rem;
+  }
+
+  .center-title {
+    text-align: center;
+  }
+
+  .title-box {
+    height: auto;
+  }
+
+  .wallpaper-copy {
+    text-align: justify !important;
+  }
+
+  .wallpaper__card {
+    margin-bottom: 5rem;
+  }
+
+  .video__container {
+    flex-direction: column;
+  }
+  
+  .video__container iframe {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 4rem;
+  }
+
+  .aniversario__testimoniales {
+    height: auto;
+  }
+
+  .input span {
+    background-color: #c5c5c5;
+  }
+
+  .input span::after {
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #e2dada;
+  }
+
+  .input.active > span::after {
+    color: white !important;
   }
 
 }

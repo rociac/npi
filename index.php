@@ -1,8 +1,8 @@
 <?php
   get_header(); ?>
-  <main class="bg-grey">
+  <main class="bg-grey page-main">
     <div class="title-box__container">
-      <div class="blog__title-box">
+      <div class="title-box">
         <h1 class="title">Blog</h1>
         <hr class="break break-dark mt-2 mb-2">
         <p>Descubre el blog de la Industria del Plástico creado por profesionales con más de 30 años de experiencia.

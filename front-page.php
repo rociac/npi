@@ -14,13 +14,13 @@
       <h1 class="text-blue hero__title">NPI Molding Solutions</h1>
       <p class="hero__copy">Es una empresa 100% mexicana que ofrece soluciones integrales para tu negocio de Moldeo por Inyección.</p>
       <hr class="break break-light mt-3 mb-3">
-      <a class="btn__blue-big hidden" href="#">Conoce más <i class="button-icon fas fa-chevron-right"></i></a>
+      <a class="btn btn-primary btn-big mt-2" href="<?php echo site_url('/nosotros'); ?>">Conoce más <i class="button-icon fas fa-chevron-right"></i></a>
     </div>
   </section>
 
   <section class="nosotros">
     <div class="nosotros__izq">
-      <a class="nosotros__link" href="#">NPI Molding Solutions</a>
+      <a class="nosotros__link" href="<?php echo site_url('/nosotros'); ?>">NPI Molding Solutions</a>
       <h2 class="title">Acerca de Nosotros</h2>
       <hr class="break break-dark mt-2 mb-2">
       <p class="nosotros__copy">En NPI Molding Solutions ofrecemos la fabricación de moldes, servicios de taller, automatizaciones, sistema de coladas calientes,
@@ -38,6 +38,7 @@
       <h2 class="title mtb-1"><a href="<?php echo site_url('/blog'); ?>">Blog</a></h2>
       <hr class="break break-dark mt-1 mb-1">
       <p class="nosotros__copy mt-1">Ingresa aquí para leer nuestro BLOG: Una herramienta útil para tu negocio de Moldeo por Inyección.</p>
+      <a class="btn btn-primary btn-big mt-2" href="<?php echo site_url('/blog'); ?>">Ir al Blog <i class="button-icon fas fa-chevron-right"></i></a>
     </div>
     <?php
       $homepagePosts = new WP_Query(array(
@@ -77,7 +78,7 @@
         Con nuestros cursos aprenderás de elementos de control para la administración y calidad operativa a través de indicadores en el proceso de inyección,
          dirigidos a mantener en forma documental y eficiente los pasos productivos, eficiencia, control de calidad de producto y proceso, desperdicios, seguridad, orden y limpieza.
       </p>
-      <a class="btn__blue-big hidden" href="#">Ir a los cursos <i class="button-icon fas fa-chevron-right"></i></a>
+      <a class="btn btn-primary btn-big mt-2" href="<?php echo site_url('/cursos'); ?>">Ir a los cursos <i class="button-icon fas fa-chevron-right"></i></a>
     </div>
 
   </section>

@@ -49,7 +49,7 @@
           <p>- Fabricación de Moldes para la Inyección de plástico.</p>
           <p>- Servicio de taller para tu Molde.</p>
           <p>- Refaccionamiento de Moldes y Máquinas.</p>
-          <p>- Automatización de tu negocio.</p>
+          <p>- Automatización de los procesos de tu negocio.</p>
           <p>- Sistema de Colada Caliente.</p>
           <p>- Certificación IMS.</p>
           <p>- Cursos.</p>

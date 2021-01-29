@@ -1,3 +1,5 @@
+const button = document.querySelector('#wpforms-submit-38');
+
 const carouselSlide = document.querySelector('.contact__carousel-container');
 const carouselImages = document.querySelectorAll('.contact__carousel-container img');
 
@@ -40,4 +42,8 @@ carouselSlide.addEventListener('transitionend', () => {
     carouselSlide.style.transform = 'translateX' + (-size * counter) + 'px)';
   }
   console.log(counter);
+});
+
+button.addEventListener('click', () => {
+  return gtag_report_conversion('https://npimoldingsolutions.com/contacto');
 });

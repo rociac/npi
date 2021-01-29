@@ -4,12 +4,13 @@
     <a class="image-container" href="<?php echo site_url(); ?>">
       <img src="<?php echo get_theme_file_uri('img/logo-white.png')?>" alt="NPI Logo">
     </a>
-    <ul class="nav__list footer__list">
+    <ul class="footer-nav__list footer__list">
       <li><a class="text-light footer__hover" href="<?php echo site_url('/blog'); ?>">Blog</a></li>
-      <li><a class="text-light footer__hover hidden" href="#">Nosotros</a></li>
-      <li><a class="text-light footer__hover hidden" href="#">Multimedia</a></li>
-      <li><a class="text-light footer__hover hidden" href="#">Cursos</a></li>
-      <li><a class="text-light footer__hover hidden" href="#">Recursos</a></li>
+      <li><a class="text-light footer__hover" href="<?php echo site_url('/nosotros'); ?>">Nosotros</a></li>
+      <li><a class="text-light footer__hover" href="<?php echo site_url('/servicios'); ?>">Servicios</a></li>
+      <li class="hidden"><a class="text-light footer__hover" href="#">Multimedia</a></li>
+      <li><a class="text-light footer__hover" href="<?php echo site_url('/cursos'); ?>">Cursos</a></li>
+      <li class="hidden"><a class="text-light footer__hover" href="#">Recursos</a></li>
     </ul>
   </nav>
   <hr class="footer__break">
